@@ -26,10 +26,12 @@ public class Main {
                 "phone"
         };
 
-        List<String> uniqueWord = Arrays.stream(array).distinct().toList();
+        //List<String> uniqueWords = Arrays.stream(array).distinct().toList(); Здесь выполнено через стримы
+
+        Set<String> uniqueWords = new HashSet<>(Arrays.asList(array));
 
         System.out.println("Список уникальных слов: ");
-        System.out.println(uniqueWord);
+        System.out.println(uniqueWords);
 
         System.out.println("Количество вхождений каждого слова: ");
         Map<String, Integer> map = new HashMap<>();
