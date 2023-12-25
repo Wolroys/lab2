@@ -19,4 +19,9 @@ public class PhoneDirectory {
     public static Set<String> get(String surname) {
         return list.getOrDefault(surname, new HashSet<>());
     }
+
+    public static void printList(){
+        for (var person : list.entrySet())
+            System.out.println(person);
+    }
 }

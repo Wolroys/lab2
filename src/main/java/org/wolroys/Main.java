@@ -49,10 +49,13 @@ public class Main {
         PhoneDirectory.add("Petrov", "8-888-888-88-82");
         PhoneDirectory.add("Ivanov", "8-488-858-88-82");
         PhoneDirectory.add("Ivanov", "8-488-898-88-82");
+        PhoneDirectory.add("Ivanov", "8-488-898-88-82");
 
         System.out.println("Paslenov: " + PhoneDirectory.get("Paslenov"));
         System.out.println("Petrov: " + PhoneDirectory.get("Petrov"));
         System.out.println("Ivanov: " + PhoneDirectory.get("Ivanov"));
+
+//        PhoneDirectory.printList(); //напечатать все номера
     }
 
 }
